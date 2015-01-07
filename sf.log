@@ -1,0 +1,22 @@
+[P] PPID: 23256 (sudo lsof -p 23256)
+[P] Socket is listening. Send a line.
+[C] CHILD PID: 23258 (sudo lsof -p 23258)
+[C] Sleeping 1 minute...
+[P] Connection from: localhost:58440
+[P] Received: testing parent
+
+[P] Sleeping 1 minute...
+[C] Child socket is listening. Send a line.
+[C] Connection from: localhost:58445
+[C] Received: testing child
+
+[C] OK, base tests complete.
+[C] Sleeping 1 minute for parent close & exit...
+[P] Closing listening socket.
+[P] Sleeping 2 minutes...
+[C] Child socket is listening? Send a line.
+[C] Connection from: localhost:58454
+[C] Received: testing child2
+
+[C] Child exiting.
+[P] Parent exiting.
